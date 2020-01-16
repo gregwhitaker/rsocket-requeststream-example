@@ -13,9 +13,23 @@ Follow the steps below to run the example:
 
         ./gradlew :count-service:run
         
-2. Run the following command to start the `count-client` and request `10` integers:
+2. In a new terminal, run the following command to start the `count-client` and request integers `1` to `10`:
 
-        ./gradlew :count-client:run --args=10
+        ./gradlew :count-client:run
+        
+    If successful, you will see the following in the terminal:
+
+        > Task :count-client:run
+        [reactor-tcp-nio-1] INFO example.count.client.CountClient - Received: 1
+        [reactor-tcp-nio-1] INFO example.count.client.CountClient - Received: 2
+        [reactor-tcp-nio-1] INFO example.count.client.CountClient - Received: 3
+        [reactor-tcp-nio-1] INFO example.count.client.CountClient - Received: 4
+        [reactor-tcp-nio-1] INFO example.count.client.CountClient - Received: 5
+        [reactor-tcp-nio-1] INFO example.count.client.CountClient - Received: 6
+        [reactor-tcp-nio-1] INFO example.count.client.CountClient - Received: 7
+        [reactor-tcp-nio-1] INFO example.count.client.CountClient - Received: 8
+        [reactor-tcp-nio-1] INFO example.count.client.CountClient - Received: 9
+        [reactor-tcp-nio-1] INFO example.count.client.CountClient - Received: 10
         
 ## Bugs and Feedback
 For bugs, questions, and discussions please use the [Github Issues](https://github.com/gregwhitaker/rsocket-requeststream-example/issues).
