@@ -29,7 +29,7 @@ public class CountService {
                             @Override
                             public Flux<Payload> requestStream(Payload payload) {
                                 return Flux.create(payloadFluxSink -> {
-                                    for (int i = 0; i < 10; i++) {
+                                    for (int i = 1; i <= 10; i++) {
                                         LOG.info("Sending: {}", i);
                                         payloadFluxSink.next(DefaultPayload.create(BigInteger.valueOf(i).toByteArray()));
                                     }
