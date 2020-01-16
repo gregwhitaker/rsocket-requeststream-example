@@ -33,6 +33,8 @@ public class CountService {
                                         LOG.info("Sending: {}", i);
                                         payloadFluxSink.next(DefaultPayload.create(BigInteger.valueOf(i).toByteArray()));
                                     }
+
+                                    payloadFluxSink.complete();
                                 });
                             }
                         });

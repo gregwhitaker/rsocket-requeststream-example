@@ -32,6 +32,7 @@ Follow the steps below to run the example:
         [reactor-tcp-nio-1] INFO example.count.client.CountClient - Received: 8
         [reactor-tcp-nio-1] INFO example.count.client.CountClient - Received: 9
         [reactor-tcp-nio-1] INFO example.count.client.CountClient - Received: 10
+        [reactor-tcp-nio-1] INFO example.count.client.CountClient - Done
         
 ## Bugs and Feedback
 For bugs, questions, and discussions please use the [Github Issues](https://github.com/gregwhitaker/rsocket-requeststream-example/issues).
