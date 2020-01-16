@@ -1,6 +1,8 @@
 # rsocket-requeststream-example
 An example of using the request-stream interaction model in [RSocket](http://rsocket.io).
 
+This example uses the `count-client` to send a request to stream the numbers `1` through `10` back from the `count-service` using RSocket.
+
 ## Building the Example
 Run the following command to build the example:
 
