@@ -1,4 +1,6 @@
 # rsocket-requeststream-example
+![Build](https://github.com/gregwhitaker/rsocket-requeststream-example/workflows/Build/badge.svg)
+
 An example of using the request-stream interaction model in [RSocket](http://rsocket.io).
 
 This example uses the `count-client` to send a request to stream the numbers `1` through `10` back from the `count-service` using RSocket.
